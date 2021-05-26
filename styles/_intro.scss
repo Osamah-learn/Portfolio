@@ -1,0 +1,91 @@
+.main-head{
+    width: 95%;
+    margin: 0 0 0 auto;
+    
+}
+
+nav{
+    @include flex(space-between, center, row);
+    min-height: 10vh;
+    width: 60%;
+    flex-wrap: wrap;
+    .logo{
+        @include flex(flex-start,center,row);
+        flex: 1 1 10rem;
+    }
+    h1{
+        margin: 2rem;
+    }
+    
+    ul{
+        @include flex(space-around,center,row);
+        flex:1 1 40rem;
+    }
+}
+
+
+.intro{
+    min-height: 90vh;
+    width:90%;
+    margin: auto;
+    flex-wrap: wrap;
+    @include flex(space-between,center,row);
+    h2{
+        font-size: 8rem;
+        padding-top: 2rem;
+        background:$gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+    h3{
+        font-size: 6rem;
+        padding-top: 2rem;
+    }
+    p{
+        padding-top: 2rem;
+        color: $gray-text;
+    }
+
+    
+}
+
+.intro-social{
+    margin-top:4rem;
+    a+a{
+        margin:4rem;
+    }
+}
+
+
+
+.splash{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height:100%;
+    z-index: -1;
+}
+
+.active{
+    background:$gray-text;
+    color: white;
+    padding:1rem 3rem;
+    border-radius: 5px;
+    border:none;
+   
+}
+
+
+.intro-text,.intro-images{
+    flex:0 3 50rem;
+}
+
+#clock{
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
