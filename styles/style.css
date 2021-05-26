@@ -176,26 +176,93 @@ nav ul {
           flex: 0 3 50rem;
 }
 
-#clock {
-  -webkit-animation: mymove 5s infinite;
-          animation: mymove 5s infinite;
+#plant-left {
+  position: relative;
+  -webkit-animation: plant 5s infinite alternate;
+          animation: plant 5s infinite alternate;
 }
 
-@-webkit-keyframes mymove {
+#me {
+  position: relative;
+  -webkit-animation: me 1s ease infinite alternate;
+          animation: me 1s ease infinite alternate;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#plant-right {
+  position: relative;
+  -webkit-animation: plant 5s infinite alternate 0.5s;
+          animation: plant 5s infinite alternate 0.5s;
+}
+
+#clock-arrow {
+  -webkit-animation: clock 1s  infinite linear;
+          animation: clock 1s  infinite linear;
+  transform-box: fill-box;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes clock {
   from {
-    top: 0px;
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
   }
   to {
-    top: 200px;
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
   }
 }
 
-@keyframes mymove {
+@keyframes clock {
   from {
-    top: 0px;
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
   }
   to {
-    top: 200px;
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes me {
+  from {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+  }
+  to {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+}
+
+@keyframes me {
+  from {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+  }
+  to {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+}
+
+@-webkit-keyframes plant {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 200px;
+  }
+}
+
+@keyframes plant {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */

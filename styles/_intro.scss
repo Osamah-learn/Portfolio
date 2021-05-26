@@ -81,11 +81,56 @@ nav{
     flex:0 3 50rem;
 }
 
-#clock{
-    animation: mymove 5s infinite;
+#plant-left{
+    position: relative;
+    animation: plant 5s infinite alternate;
+  }
+
+  #me{
+    position: relative;
+    animation: me 1s ease infinite alternate;
+    transform-origin: bottom;
+  }
+
+  #plant-right{
+   
+    
+    position: relative;
+    animation: plant 5s infinite alternate 0.5s;
+  }
+
+
+  #clock-arrow{
+    
+    animation: clock 1s  infinite linear;
+    transform-box: fill-box;
+    transform-origin: bottom;
+  }
+
+  @keyframes clock {
+      from{
+          transform:rotateZ(-5deg)
+      }
+
+      to{
+          transform: rotateZ(360deg);
+      }
+  }
+
+
+  @keyframes me {
+    from{
+        transform:rotateZ(-5deg)
+    }
+
+    to{
+        transform: rotateZ(5deg);
+    }
 }
 
-@keyframes mymove {
-    from {top: 0px;}
-    to {top: 200px;}
+
+
+  @keyframes plant {
+    from {bottom: 0px;}
+    to {bottom: 200px;}
   }
