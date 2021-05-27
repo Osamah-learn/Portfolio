@@ -21,6 +21,10 @@ nav{
         @include flex(space-around,center,row);
         flex:1 1 40rem;
     }
+
+    .hamburger.hamburger--emphatic-r.is-active{
+        display: none;
+    }
 }
 
 
@@ -47,13 +51,14 @@ nav{
         color: $gray-text;
     }
 
+   
     
 }
 
 .intro-social{
     margin-top:4rem;
     a+a{
-        margin:4rem;
+       margin-left: 4rem;
     }
 }
 
@@ -65,6 +70,10 @@ nav{
     right: 0;
     height:100%;
     z-index: -1;
+    
+}
+.splash2{
+    display: none;
 }
 
 .active{
@@ -80,6 +89,7 @@ nav{
 .intro-text,.intro-images{
     flex:0 3 50rem;
 }
+/* Animations */
 
 #plant-left{
     position: relative;
