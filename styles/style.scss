@@ -1,0 +1,271 @@
+/* Variables */
+
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$header1: 2.5rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, rgb(255, 157, 0) 0000);
+$gray-text: rgb(92, 92, 92);
+$background: #2c2c2c;
+
+@mixin flex($jusitfy, $align, $direction) {
+  display: flex;
+  justify-content: $jusitfy;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+/* Imports */
+@import "global";
+@import "intro";
+@import "them1";
+@import "them2";
+@import "loader";
+@import "menu-them";
+@import "projects";
+@import "contact";
+@import "skills";
+
+
+
+
+
+/* Media Querys */
+@media only screen and (max-width: 1445px) {
+  html {
+    font-size: 50%;
+    background: $them-color;
+    background-image: $them-image;
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+
+  .hamburger.hamburger--emphatic-r.is-active{
+    display: block !important;
+}
+.main-head {
+  width: 100%;
+  margin: 0 0 0 auto;
+}
+
+nav ul{
+  background-color: gray;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  right: 0%;
+  flex-direction: column;
+  align-items: center;
+  background-image: $background-image;
+  background-color: $background-color;
+  background-attachment: $background-attachment;
+  background-size: $background-size;
+  transition: transform 1s ease;
+}
+ul a{
+  color: white;
+}
+.nav-open{
+  transform: translate(-100%);
+}
+  
+
+  .intro p {
+    padding-top: 2.3rem;
+    color: #3a3a3a;
+    color: white;
+}
+    
+    nav ul li a {
+      color: white;
+  }
+    
+  .splash {
+    display: none;
+  }
+
+  svg {
+    width: 100%;
+    margin: auto;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .intro-images {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 3 50rem;
+    flex: 1 1 auto;
+}
+
+
+
+.active {
+  background: white;
+  color: rgb(0, 0, 0);
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  border: none;
+}
+
+}
+
+/* IPAD */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
+    background:$them2-color;
+    background-image:$them2-image;
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+  h1 {
+    font-size: 4.5rem;
+    color: white;
+  }
+
+  
+  .intro p {
+    padding-top: 2.3rem;
+    color: #6e6868;
+}
+
+  .splash2 {
+    display: block;
+    position: relative;
+    width: 100%;
+    bottom: 50rem;
+    z-index: -1;
+  }
+
+  svg {
+    height: 60%;
+  }
+  .intro-text {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .intro-images {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 3 50rem;
+    flex: 1 1 auto;
+}
+
+nav .logo{
+  margin-left: 3rem;
+}
+.Photography img{
+  height:100%;
+  width:100%;
+
+}
+.e-commerce img {
+  height:100%;
+  width:100%;
+}
+
+.travelly img {
+  height:100%;
+  width:100%;
+}
+
+}
+
+
+
+
+/* Iphone */
+
+@media screen and (max-width: 550px) {
+  body {
+    background:$them2-color;
+    background-image:$them2-image;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .hamburger.hamburger--emphatic-r.is-active{
+    display: block !important;
+}
+.main-head {
+  width: 100%;
+  margin: 0 0 0 auto;
+}
+
+nav ul{
+  background-color: gray;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  right: 0%;
+  flex-direction: column;
+  align-items: center;
+  background-image: $background-image;
+  background-color: $background-color;
+  background-attachment: $background-attachment;
+  background-size: $background-size;
+  transition: transform 1s ease;
+}
+ul a{
+  color: white;
+}
+h1 {
+  font-size: 4.5rem;
+  color: white;
+  
+}
+.nav-open{
+  transform: translate(-100%);
+}
+nav .logo{
+  margin-left: 3rem;
+}
+
+  .intro h3 {
+    font-size: 4rem;
+  }
+ 
+  .intro-social {
+    @include flex(center, center, row);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .intro {
+    width: 80%;
+  }
+
+  .intro p {
+    padding-top: 2.3rem;
+    color: #6e6868;
+}
+
+  .intro-images {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 3 50rem;
+    flex: 1 1 auto;
+}
+
+
+.Photography img{
+  height:100%;
+  width:100%;
+
+}
+.e-commerce img {
+  height:100%;
+  width:100%;
+}
+
+.travelly img {
+  height:100%;
+  width:100%;
+}
+
+
+}
