@@ -3,6 +3,9 @@
     margin: 0 0 0 auto;
     
 }
+.hamburger.hamburger--emphatic-r {
+    display: none;
+}
 
 nav{
     @include flex(space-between, center, row);
@@ -44,7 +47,27 @@ nav{
     h2{
     font-size: 8rem;
     padding-top: 2rem;
+   color: tomato;
+   display: inline-block;
     }
+
+    h3 {
+        font-size: 6rem;
+        padding: 2rem 0rem;
+    }
+    .intro-social {
+        margin-top: 4rem;
+        a +a {
+            margin: 5rem;
+        }
+    }
+
+     p {
+        padding-top: 2.3rem;
+        color: #6e6868;
+        margin-bottom: 8rem;
+    }
+
 }
 
 

@@ -51,6 +51,10 @@ a {
   margin: 0 0 0 auto;
 }
 
+.hamburger.hamburger--emphatic-r {
+  display: none;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,6 +146,27 @@ nav .hamburger.hamburger--emphatic-r.is-active {
 .intro h2 {
   font-size: 8rem;
   padding-top: 2rem;
+  color: tomato;
+  display: inline-block;
+}
+
+.intro h3 {
+  font-size: 6rem;
+  padding: 2rem 0rem;
+}
+
+.intro .intro-social {
+  margin-top: 4rem;
+}
+
+.intro .intro-social a + a {
+  margin: 5rem;
+}
+
+.intro p {
+  padding-top: 2.3rem;
+  color: #6e6868;
+  margin-bottom: 8rem;
 }
 
 .splash {
@@ -571,6 +596,9 @@ footer h4 {
     background-attachment: fixed;
     background-size: cover;
   }
+  .hamburger.hamburger--emphatic-r {
+    display: block;
+  }
   h1 {
     font-size: 4.5rem;
     color: white;
@@ -618,8 +646,8 @@ footer h4 {
     background-attachment: fixed;
     background-size: cover;
   }
-  .hamburger.hamburger--emphatic-r.is-active {
-    display: block !important;
+  .hamburger.hamburger--emphatic-r {
+    display: block;
   }
   .main-head {
     width: 100%;

@@ -38,7 +38,7 @@ init();
  const nav = document.querySelector(".nav-links");
  const links = document.querySelectorAll("a");
  window.onload = (event) => {
-  hamburger.classList.toggle("is-active");
+  
   nav.classList.toggle("nav-open");
 };
  // On click
