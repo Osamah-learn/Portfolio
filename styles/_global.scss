@@ -2,7 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     font-family: 'Montserrat', sans-serif;
+=======
+    font-family: 'Lobster', cursive;
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
    /*  opacity: 0;
     display: none; */
     transition: opacity 2s ease-in;
@@ -21,7 +25,11 @@
     font-size: $header1;
   }
 
+<<<<<<< HEAD
   li,a,p{
+=======
+  li,button,label,input,a,p{
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
     font-size: $text;
   }
 

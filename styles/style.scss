@@ -20,6 +20,7 @@ $background: #2c2c2c;
 /* Imports */
 @import "global";
 @import "intro";
+<<<<<<< HEAD
 @import "them1";
 @import "them2";
 @import "loader";
@@ -27,6 +28,11 @@ $background: #2c2c2c;
 @import "projects";
 @import "contact";
 @import "skills";
+=======
+@import "them";
+@import "loader";
+@import "menu-them";
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
 
 
 
@@ -119,8 +125,13 @@ ul a{
 @media only screen and (max-width: 768px) {
   html {
     font-size: 40%;
+<<<<<<< HEAD
     background:$them2-color;
     background-image:$them2-image;
+=======
+    background: $them-color;
+    background-image: $them-image;
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
     background-attachment: fixed;
     background-size: cover;
     
@@ -130,12 +141,15 @@ ul a{
     color: white;
   }
 
+<<<<<<< HEAD
   
   .intro p {
     padding-top: 2.3rem;
     color: #6e6868;
 }
 
+=======
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
   .splash2 {
     display: block;
     position: relative;
@@ -160,6 +174,7 @@ ul a{
 nav .logo{
   margin-left: 3rem;
 }
+<<<<<<< HEAD
 .Photography img{
   height:100%;
   width:100%;
@@ -174,6 +189,9 @@ nav .logo{
   height:100%;
   width:100%;
 }
+=======
+
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
 
 }
 
@@ -184,8 +202,13 @@ nav .logo{
 
 @media screen and (max-width: 550px) {
   body {
+<<<<<<< HEAD
     background:$them2-color;
     background-image:$them2-image;
+=======
+    background: $them-color;
+    background-image: $them-image;
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
     background-attachment: fixed;
     background-size: cover;
   }
@@ -240,16 +263,20 @@ nav .logo{
     width: 80%;
   }
 
+<<<<<<< HEAD
   .intro p {
     padding-top: 2.3rem;
     color: #6e6868;
 }
 
+=======
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
   .intro-images {
     -webkit-box-flex: 0;
     -ms-flex: 0 3 50rem;
     flex: 1 1 auto;
 }
+<<<<<<< HEAD
 
 
 .Photography img{
@@ -268,4 +295,6 @@ nav .logo{
 }
 
 
+=======
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
 }

@@ -15,8 +15,11 @@ nav{
     }
     h1{
         margin: 2rem;
+<<<<<<< HEAD
         font-family: 'Odibee Sans', cursive;
         color: gray;
+=======
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
     }
     
     ul{
@@ -24,7 +27,13 @@ nav{
         flex:1 1 40rem;
     }
 
+<<<<<<< HEAD
   
+=======
+    .hamburger.hamburger--emphatic-r.is-active{
+        display: none;
+    }
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
 }
 
 
@@ -85,10 +94,13 @@ nav{
    
 }
 
+<<<<<<< HEAD
 .intro-text h2{
     font-family: 'Pattaya', sans-serif;
 }
 
+=======
+>>>>>>> ee0187c8887ebfed72812ba18ea6d507c32e3f55
 
 .intro-text,.intro-images{
     flex:0 3 50rem;
