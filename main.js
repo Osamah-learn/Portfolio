@@ -68,7 +68,7 @@ init();
 /* Typping Effects */
 
 var i = 0;
-var text = "Hi There ! my name is Osamah, and I’m a front end Developer From Finland welcome to my website  ";
+var text = "Hi There ! My name is Osamah and I’m a front end developer from Finland. Welcome to my website...";
 function typing(){
   if (i<text.length){
     document.getElementById("text").innerHTML+=text.charAt(i);

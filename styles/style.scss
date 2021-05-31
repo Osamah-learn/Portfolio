@@ -34,6 +34,7 @@ $background: #2c2c2c;
 
 
 
+
 /* Media Querys */
 @media only screen and (max-width: 1445px) {
   html {
@@ -80,6 +81,11 @@ ul a{
     padding-top: 2.3rem;
     color: #3a3a3a;
     color: white;
+}
+
+#text {
+  height: 1rem;
+  width: 90%;
 }
     
     nav ul li a {

@@ -92,6 +92,7 @@ nav .logo {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 10rem;
           flex: 1 1 10rem;
+  cursor: pointer;
 }
 
 nav h1 {
@@ -559,6 +560,10 @@ footer h4 {
     padding-top: 2.3rem;
     color: #3a3a3a;
     color: white;
+  }
+  #text {
+    height: 1rem;
+    width: 90%;
   }
   nav ul li a {
     color: white;
